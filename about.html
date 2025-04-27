@@ -11,8 +11,24 @@
             font-family: 'system-ui', sans-serif;
         }
 
+
         .nav-link.active {
             font-weight: bold;
+        }
+
+        span>img {
+            width: 72;
+            height: 48;
+            top: 16px;
+            left: 52px;
+
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         p {
@@ -28,13 +44,8 @@
 
         }
 
-        .col-md-6 {
-            width: 539;
-            height: 193;
-            top: 214px;
-            left: 24px;
-            border-radius: 9.16px;
-
+        .d-flex {
+            justify-content: center;
         }
     </style>
     <title>Reality Games</title>
@@ -51,21 +62,33 @@
 <body style="background-color: #ffffff;">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Reality Games Fantasy League</a>
+            <a class="navbar-brand" href="#">
+                <!-- Placeholder for logo SVG -->
+                <!-- <span><a href="Pictures/logo.png"></a></span> -->
+                <!-- <span> <img src="pictures/logo.png" alt=""> </span> -->
+                <img src="Pictures/logo.png" alt="Reality Games Logo" style="height: 40px;">
+
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active text-danger" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Weekly Picks</a></li>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="weekly-picks.html">Weekly Picks</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Global leaderboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">League</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Rules</a></li>
+                    <li class="nav-item position-relative mx-3">
+                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="Pictures/header-img.jpg" alt="Profile" class="profile-img">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -164,10 +187,7 @@
 
         <h5 class="fw-bold mb-3">Our Team</h5>
         <p class="text-muted mb-5">
-            We're a small team of passionate Survivor enthusiasts who created a rules-heavy fantasy league
-            for over a decade and wanted to share their complex fantasy league with other fans.
-            Our backgrounds span software development, game design, and of course,
-            countless hours analyzing Survivor strategy. We have never missed an episode since 2000!
+            We're a small team of passionate Survivor enthusiasts who created a rules-heavy fantasy league for over a decade and wanted to share their complex fantasy league with other fans. Our backgrounds span software development, game design, and of course, countless hours analyzing Survivor strategy. We have never missed an episode since 2000!
         </p>
 
         <h5 class="fw-bold mb-3">Monetization</h5>

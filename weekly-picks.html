@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly Picks - Reality Games Fantasy League</title>
+    <style>
+        /* Custom styles for Weekly Picks page */
+
+        body {
+            font-family: system-ui, sans-serif;
+        }
+
+        span>img {
+            width: 72;
+            height: 48;
+            top: 16px;
+            left: 52px;
+
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        h2,
+        h5,
+        h6 {
+            font-weight: bold;
+        }
+
+        .btn-outline-danger {
+            color: #721c24;
+            border-color: #f5c6cb;
+        }
+
+        .btn-outline-danger:hover {
+            background-color: #f5c6cb;
+            color: #721c24;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="weekly-picks.css">
+</head>
+
+<body style="background-color: #f3efdd;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Placeholder for logo SVG -->
+                <!-- <span><a href="Pictures/logo.png"></a></span> -->
+                <!-- <span> <img src="pictures/logo.png" alt=""> </span> -->
+                <img src="Pictures/logo.png" alt="Reality Games Logo" style="height: 40px;">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="weekly-picks.html">Weekly Picks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Global leaderboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">League</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rules</a></li>
+                    <li class="nav-item position-relative mx-3">
+                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="Pictures/header-img.jpg" alt="Profile" class="profile-img">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Weekly Picks Container -->
+    <div class="container my-5 p-4 bg-white rounded" style="border: 2px solid #007bff; max-width: 800px;">
+        <h2 class="text-center fw-bold mb-4">Your Weekly Pick</h2>
+
+        <div class="text-center mb-3">
+                <span>
+                    <h6 class="fw-semibold mb-1">Week 4 – Airs April 15</h6>
+                </span>
+                <span>
+                    <p class="text-danger fw-semibold">Picks lock in: 10h 43m</p>
+                </span>
+            <p class="text-muted mb-1">Choose 1 active castaway for this week</p>
+        </div>
+
+        <div class="row g-4 justify-content-center mb-4">
+            <div class="col-md-5">
+                <div class="p-3 bg-light rounded text-center border border-danger">
+                    <div class="mb-2">
+                        <i class="bi bi-person-circle" style="font-size: 2.5rem; color: #d46a6a;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-1">Sarah Johnson</h5>
+                    <p class="text-muted mb-3 mb-md-2">Tribe: Maku</p>
+                    <button class="btn btn-danger btn-sm">Active Player</button>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="p-3 bg-light rounded text-center">
+                    <div class="mb-2">
+                        <i class="bi bi-person-circle" style="font-size: 2.5rem; color: #d46a6a;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-1">Michael Chen</h5>
+                    <p class="text-muted mb-3 mb-md-2">Tribe: Tagi</p>
+                    <button class="btn btn-outline-danger btn-sm">Bench Player</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-3">
+            <button class="btn btn-danger px-5">Confirm Pick</button>
+        </div>
+
+        <p class="text-center text-muted small">
+            Your selection will lock automatically at 8:00 PM EST
+        </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

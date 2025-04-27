@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f0e7;
+}
+
+span>img {
+    width: 72;
+    height: 48;
+    top: 16px;
+    left: 52px;
+
+}
+
+.welcome-card {
+    background-color: #b5322f;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.draft-ranking .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    min-height: 200px;
+}
+
+.draft-ranking .btn {
+    margin-top: 1rem;
+}
+
+.league-ranking .list-group-item {
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.league-ranking .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.nav-link.active {
+    color: #b5322f !important;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn-create {
+    background-color: #b5322f;
+    color: white;
+    border-radius: 5px;
+}
